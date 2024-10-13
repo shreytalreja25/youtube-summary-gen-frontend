@@ -17,7 +17,7 @@ function App() {
 
     try {
       // Backend API call to Flask endpoint
-      const response = await fetch('http://localhost:5000/summarize', {
+      const response = await fetch('https://youtube-summary-gen-backend.onrender.com/summarize', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ youtube_url: url }), // Corrected body to 'youtube_url'
